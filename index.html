@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="w-1/2 bg-blue-400 mx-auto rounded-lg p-10 mt-6">
+      <p class="text-xl font-semibold mb-2">price</p>
+      <h1 class="text-3xl font-bold **text-clifford** mb-2">
+        $<span id="amount">350</span>
+      </h1>
+      <input
+        type="text"
+        id="field"
+        class="mb-2 w-9/12 rounded"
+        placeholder="plese enter DOM to get the discount"
+      />
+      <button id="apply" class="block mb-2 bg-yellow-400 px-4 py-1 rounded">
+        Apply
+      </button>
+    </div>
+    <script src="js/java.js"></script>
+  </body>
+</html>
